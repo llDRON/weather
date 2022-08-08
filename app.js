@@ -4,7 +4,7 @@ async function loadWeather(e) {
   weatherBlock.innerHTML = `<div class="weather-loading">
     <img src = "Gifs/loading.gif" alt = "Loading">
     </div>`;
-  const server = `http://api.openweathermap.org/data/2.5/weather?q=IZMAIL&units=metric&APPID=5d066958a60d315387d9492393935c19`;
+  const server = `https://api.openweathermap.org/data/2.5/weather?q=IZMAIL&units=metric&APPID=5d066958a60d315387d9492393935c19`;
   const response = await fetch(server, {
     method: "GET",
   });
